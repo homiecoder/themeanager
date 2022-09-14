@@ -1,0 +1,139 @@
+{
+  "name": "vscode-themeanager",
+  "displayName": "Themeanager",
+  "description": "This is you new assistant to the theme manager. Display your theme in a notification or in the status bar.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tnfdesigns/themeanager"
+  },
+  "publisher": "tnfdesigns-hc",
+  "author": {
+    "name": "BJ",
+    "email": "tnfdesignstudios@gmail.com"
+  },
+  "homepage": "https://github.com/tnfdesigns/themeanager",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "Theme",
+    "Fun",
+    "Notification",
+    "Status Bar",
+    "Stream",
+    "Twitch",
+    "Twitch.tv",
+    "YouTube",
+    "YouTube.com",
+    "Assistant"
+  ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "preview": false,
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "themeanager.showCurrentTheme",
+        "title": "Display Current Theme",
+        "category": "Themeanager"
+      },
+      {
+        "command": "themeanager.showCurrentFontFamily",
+        "title": "Display Current Font Family",
+        "category": "Themeanager",
+        "description": "Shows your current font in vscode notification popup."
+      },
+      {
+        "command": "themeanager.showCurrentThemeAndFontFamily",
+        "title": "Display Current Theme & Font Family",
+        "category": "Themeanager",
+        "description": "Shows your current theme & font in vscode notification popup."
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "themeanager.showCurrentTheme",
+        "key": "ctrl+shift+alt+7",
+        "mac": "cmd+shift+alt+7"
+      },
+      {
+        "command": "themeanager.showCurrentFontFamily",
+        "key": "ctrl+shift+alt+8",
+        "mac": "cmd+shift+alt+8"
+      },
+      {
+        "command": "themeanager.showCurrentThemeAndFontFamily",
+        "key": "ctrl+shift+alt+9",
+        "mac": "cmd+shift+alt+9"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "themeanager.showCurrentTheme",
+          "when": "editorIsOpen"
+        },
+        {
+          "command": "themeanager.showCurrentFontFamily",
+          "when": "editorIsOpen"
+        },
+        {
+          "command": "themeanager.showCurrentThemeAndFontFamily",
+          "when": "editorIsOpen"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Themeanager",
+      "properties": {
+        "themeanager.showCurrentThemeAndFontAtStartup": {
+          "type": "boolean",
+          "default": true,
+          "description": "Specifies that themeanager should show current theme and font at startup"
+        },
+        "themeanager.showStatusBar": {
+          "type": "boolean",
+          "default": true,
+          "description": "Displays the current theme in the status bar"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "pnpm run compile-tests && pnpm run compile && pnpm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.71.0",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
+    "eslint": "^8.22.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.4",
+    "ts-loader": "^9.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "@vscode/test-electron": "^2.1.5"
+  }
+}
