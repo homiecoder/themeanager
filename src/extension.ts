@@ -36,7 +36,7 @@ function addSubscriptions() {
   );
 }
 
-function applyThemeanager(): (e: ConfigurationChangeEvent) => any {
+function applyThemeanager(): (e: ConfigurationChangeEvent) => Promise<void> {
   return async (e) => {
     const startupNotification = getShowCurrentThemeAndFontAtStartup();
     const showStatusBar = getShowStatusBar();
