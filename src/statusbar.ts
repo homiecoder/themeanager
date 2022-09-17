@@ -1,6 +1,6 @@
 import { StatusBarAlignment, window, StatusBarItem } from "vscode";
 import { getShowStatusBar } from "./configuration";
-import { Commands, currentTheme, themeCheckButtonText } from "./models";
+import { Commands, currentTheme, sbarThemeText } from "./models";
 
 const _statusBarItem: StatusBarItem = window.createStatusBarItem(
   StatusBarAlignment.Right
@@ -20,7 +20,7 @@ export function clearStatusBar() {
 export function updateStatusBar() {
   const sbar = _statusBarItem;
   const show = getShowStatusBar();
-  sbar.text = `${themeCheckButtonText} `;
+  sbar.text = `${sbarThemeText} `;
   sbar.command = Commands.showStatusBar;
   sbar.tooltip = "Show Theme in Status Bar";
   if (show && !!currentTheme) {

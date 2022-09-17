@@ -4,7 +4,7 @@ import {
   fontOnlyNotification,
   themeAndFontIntervalMessage,
   themeAndFontNotification,
-  themeCheckButtonText,
+  sbarThemeText,
   themeOnlyNotification,
 } from "./models";
 
@@ -28,7 +28,7 @@ export function showStatusBarHandler() {
     StatusBarAlignment.Right,
     9800
   );
-  statusBarButton.text = `${themeCheckButtonText} `;
+  statusBarButton.text = `${sbarThemeText} `;
   statusBarButton.show();
 }
 
