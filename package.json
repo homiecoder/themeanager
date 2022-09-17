@@ -3,16 +3,17 @@
   "displayName": "Themeanager",
   "description": "This is you new assistant to the theme manager. Display your theme in a notification or in the status bar.",
   "version": "0.0.1",
+  "publisher": "tnfdesigns-hc",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/tnfdesigns/themeanager"
   },
-  "publisher": "tnfdesigns-hc",
   "author": {
-    "name": "BJ",
-    "email": "tnfdesignstudios@gmail.com"
+    "name": "BJ-HomieCoder",
+    "email": "themeanagerextension@gmail.com",
+    "url": "https://twitter.com/homiecoder"
   },
-  "homepage": "https://github.com/tnfdesigns/themeanager",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -21,15 +22,13 @@
   ],
   "keywords": [
     "Theme",
-    "Fun",
     "Notification",
     "Status Bar",
     "Stream",
     "Twitch",
-    "Twitch.tv",
     "YouTube",
-    "YouTube.com",
-    "Assistant"
+    "Assistant",
+    "Fun"
   ],
   "extensionKind": [
     "ui",
