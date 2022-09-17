@@ -5,8 +5,7 @@ export const extensionShortName = "themeanager";
 export const extensionId = "homiecoder.themeanager";
 export const separator = `\u00A0\u00A0\u00A0\u00A0 - \u00A0\u00A0\u00A0\u00A0`;
 
-// grab current theme and font
-// can i? should i async await these?
+// how do i? should i async await these?
 export const currentTheme = workspace
   .getConfiguration("workbench")
   .get("colorTheme");
@@ -14,10 +13,6 @@ export const currentTheme = workspace
 const lastSelectedFontFamily: any = workspace
   .getConfiguration("editor")
   .get("fontFamily");
-
-export const currentWindowTitle = workspace
-  .getConfiguration("window")
-  .get("title");
 
 export const activeTextEditor = window.activeTextEditor;
 export const activeEditorShort = window.activeTextEditor?.document.fileName;
