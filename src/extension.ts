@@ -3,7 +3,8 @@ import {
   ExtensionContext,
   commands,
   workspace,
-  ConfigurationChangeEvent,
+  ConfigurationChangeEvent as configurationChangeEvent,
+  window,
 } from "vscode";
 import {
   showCurrentFontFamilyHandler,
@@ -12,7 +13,6 @@ import {
   showStatusBarHandler,
 } from "./commands";
 import {
-  checkIfThemeanagerSettingsChanged,
   getShowCurrentThemeAndFontAtStartup,
   getShowStatusBar,
 } from "./configuration";
@@ -28,24 +28,22 @@ export async function activate(context: ExtensionContext) {
   await checkShowCurrentThemeAndFontAtStartupLogic();
   await checkShowStatusBarLogic();
 
-  addSubscriptions();
-}
+  workspace.onDidChangeConfiguration((configurationChangeEvent) => {
+    if (configurationChangeEvent.affectsConfiguration("themeanager")) {
+      const actions = ["Reload now", "Later"];
 
-function addSubscriptions() {
-  State.extensionContext.subscriptions.push(
-    workspace.onDidChangeConfiguration(applyThemeanager())
-  );
-}
-
-function applyThemeanager(): (e: ConfigurationChangeEvent) => Promise<void> {
-  return async (e) => {
-    const startupNotification = getShowCurrentThemeAndFontAtStartup();
-    const showStatusBar = getShowStatusBar();
-    if (checkIfThemeanagerSettingsChanged(e)) {
-      await checkShowCurrentThemeAndFontAtStartupLogic();
-      await checkShowStatusBarLogic();
+      window
+        .showInformationMessage(
+          "The VSCode window needs to reload for the changes to take effect. Would you like to reload the window now?",
+          ...actions
+        )
+        .then((action) => {
+          if (action === actions[0]) {
+            commands.executeCommand("workbench.action.reloadWindow");
+          }
+        });
     }
-  };
+  });
 }
 
 function registerCommands() {
