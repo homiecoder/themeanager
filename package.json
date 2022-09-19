@@ -97,7 +97,7 @@
       "properties": {
         "themeanager.showCurrentThemeAndFontAtStartup": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "Specifies that themeanager should show current theme and font at startup"
         },
         "themeanager.showStatusBar": {

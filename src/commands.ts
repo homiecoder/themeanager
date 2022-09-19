@@ -1,10 +1,8 @@
 import { StatusBarAlignment, window } from "vscode";
 import {
-  alertInterval,
   fontOnlyNotification,
-  themeAndFontIntervalMessage,
   themeAndFontNotification,
-  themeCheckButtonText,
+  sbarThemeText,
   themeOnlyNotification,
 } from "./models";
 
@@ -25,19 +23,9 @@ export async function showCurrentThemeAndFontFamilyHandler() {
 
 export function showStatusBarHandler() {
   const statusBarButton = window.createStatusBarItem(
-    StatusBarAlignment.Right,
-    9800
+    StatusBarAlignment.Left,
+    100
   );
-  statusBarButton.text = `${themeCheckButtonText} `;
+  statusBarButton.text = `${sbarThemeText} `;
   statusBarButton.show();
-}
-
-// Show the current theme and font family at an interval.
-export async function showThemeAndFontNotificationAtIntervalHandler() {
-  // Show popup when interval is set.
-  window.showInformationMessage(themeAndFontIntervalMessage);
-  // Start interval.
-  setInterval(() => {
-    window.showInformationMessage(themeAndFontIntervalMessage);
-  }, alertInterval);
 }

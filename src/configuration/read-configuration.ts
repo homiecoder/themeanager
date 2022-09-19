@@ -29,7 +29,7 @@ export function readConfiguration<T>(
 export function getShowCurrentThemeAndFontAtStartup() {
   return readConfiguration<boolean>(
     StandardSettings.ShowCurrentThemeAndFontAtStartup,
-    true
+    false
   );
 }
 
