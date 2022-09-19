@@ -130,7 +130,7 @@ affects them differently that day.
 
 I have collected a fair amount of themes and it's a nice surprise when i load
 a theme that I forgot how much I liked. I am totally inspired by john-papa's
-Peacock extension! It adds a nice touch of color and surprises me if I want.
+Peacock extension! Great extension for touches of color and it surprises me if I want.
 
 ###### Can I contribute to Themeanager I have an idea for a feature?
 
