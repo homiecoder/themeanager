@@ -12,6 +12,7 @@ import {
   showStatusBarHandler,
 } from "./commands";
 import {
+  checkIfThemeanagerSettingsChanged,
   getShowCurrentThemeAndFontAtStartup,
   getShowStatusBar,
 } from "./configuration";
@@ -40,6 +41,10 @@ function applyThemeanager(): (e: ConfigurationChangeEvent) => Promise<void> {
   return async (e) => {
     const startupNotification = getShowCurrentThemeAndFontAtStartup();
     const showStatusBar = getShowStatusBar();
+    if (checkIfThemeanagerSettingsChanged(e)) {
+      await checkShowCurrentThemeAndFontAtStartupLogic();
+      await checkShowStatusBarLogic();
+    }
   };
 }
 

@@ -1,5 +1,9 @@
 import { AllSettings, StandardSettings, extensionShortName } from "../models";
-import { ConfigurationTarget, workspace } from "vscode";
+import {
+  ConfigurationChangeEvent,
+  ConfigurationTarget,
+  workspace,
+} from "vscode";
 
 export async function updateGlobalConfiguration(
   setting: AllSettings,
@@ -26,5 +30,19 @@ export async function updateShowWindowTitle(value: boolean) {
   return await updateGlobalConfiguration(
     StandardSettings.ShowWindowTitle,
     value
+  );
+}
+
+export function checkIfThemeanagerSettingsChanged(e: ConfigurationChangeEvent) {
+  return (
+    e.affectsConfiguration(
+      `${extensionShortName}.${StandardSettings.ShowStatusBar}`
+    ) ||
+    e.affectsConfiguration(
+      `${extensionShortName}.${StandardSettings.ShowCurrentThemeAndFontAtStartup}`
+    ) ||
+    e.affectsConfiguration(
+      `${extensionShortName}.${StandardSettings.ShowWindowTitle}`
+    )
   );
 }
