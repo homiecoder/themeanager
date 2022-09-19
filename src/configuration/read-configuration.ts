@@ -1,10 +1,5 @@
 import * as vscode from "vscode";
-import {
-  AllSettings,
-  extensionShortName,
-  Sections,
-  StandardSettings,
-} from "../models";
+import { AllSettings, extensionShortName, StandardSettings } from "../models";
 
 const { workspace } = vscode;
 
@@ -13,7 +8,7 @@ export function getThemeanagerWorkspace() {
 }
 
 export function getUserConfig() {
-  return workspace.getConfiguration(Sections.themeanagerSection);
+  return workspace.getConfiguration("themeanager");
 }
 
 export function readConfiguration<T>(
@@ -21,7 +16,7 @@ export function readConfiguration<T>(
   defaultValue?: T | undefined
 ) {
   const value: T | undefined = workspace
-    .getConfiguration(Sections.themeanagerSection)
+    .getConfiguration("themeanager")
     .get<T | undefined>(setting, defaultValue);
   return value as T;
 }
