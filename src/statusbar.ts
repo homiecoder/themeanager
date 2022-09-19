@@ -22,7 +22,7 @@ export function updateStatusBar() {
   const show = getShowStatusBar();
   sbar.text = `${sbarThemeText} `;
   sbar.command = Commands.showStatusBar;
-  sbar.tooltip = "Show Theme in Status Bar";
+  sbar.tooltip = "Themeanager Extension";
   if (show && !!currentTheme) {
     sbar.show();
   } else {

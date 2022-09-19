@@ -40,9 +40,6 @@ export function checkIfThemeanagerSettingsChanged(e: ConfigurationChangeEvent) {
     ) ||
     e.affectsConfiguration(
       `${extensionShortName}.${StandardSettings.ShowCurrentThemeAndFontAtStartup}`
-    ) ||
-    e.affectsConfiguration(
-      `${extensionShortName}.${StandardSettings.ShowWindowTitle}`
     )
   );
 }
