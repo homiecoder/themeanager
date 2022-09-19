@@ -14,6 +14,8 @@
     "email": "themeanagerextension@gmail.com",
     "url": "https://twitter.com/homiecoder"
   },
+  "homepage": "https://github.com/tnfdesigns/themeanager",
+  "icon": "assets/icon.png",
   "engines": {
     "vscode": "^1.70.0"
   },
