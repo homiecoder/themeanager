@@ -13,7 +13,8 @@ export enum IntervalSettings {
   Interval5Mins = "interval5Mins",
   IntervalCustom = "intervalCustom",
 }
-
+// TODO: Add an enum for length of the display in statusbar and window title
+// TODO: need to add this enum for notification settings
 // export enum NotificationTypes {
 //   themeOnlyNotification = "themeOnlyNotification",
 // }
@@ -21,7 +22,6 @@ export enum IntervalSettings {
 export enum StandardSettings {
   ShowStatusBar = "showStatusBar",
   ShowCurrentThemeAndFontAtStartup = "showCurrentThemeAndFontAtStartup",
-  ShowWindowTitle = "showWindowTitle",
 }
 
 export type AllSettings = StandardSettings | IntervalSettings;

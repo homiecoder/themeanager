@@ -93,6 +93,14 @@ npm run vscode:prepublish
 
 ```
 
+#### Sponsors:
+
+If you have yet to sponsor an open source project yet, or you often find yourself rooting for the underdog, here is your chance! If you tried the extension, thank you.
+If you find this extension useful, please consider sponsoring me. I would greatly appreciate it. Thank you! If you have feedback/suggestions, please let me know! I am always looking to improve my skills and this extension.
+The honest truth, I would appreciate the help and support rather than a donation. I am very new to development and this is my first extension. I am learning as I go and I am sure there are many things I could be doing better. I am open to any and all feedback. Thank you!
+
+[![Sponsor me on GitHub](https://raw.githubusercontent.com/tnfdesigns/themeanager)](
+
 ## Contributing
 
 Contributions are always welcome!
@@ -155,12 +163,25 @@ If you have any feedback, please reach out to us at themeanagerextension@gmail.c
 
 ##### Acknowledgements:
 
-- [John Papa](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
+- [Kevin Powell](https://twitter.com/KevinJPowell)
+- [Jenn Junod](https://twitter.com/JennJunod)
+- [BenDMyers](https://twitter.com/BenDMyers)
+- [Rizel](https://twitter.com/blackgirlbytes)
+- [James Q Quick](https://twitter.com/jamesqquick)
+- [codinggarden](https://twitter.com/coding_garden)
+- [Luke](https://twitter.com/codewithluke)
+- [Theo](https://twitter.com/t3dotgg)
+- [WebDevJunkie](https://github.com/codyseibert)
+- [Jay Miller](https://twitter.com/kjaymiller)
+- [Dan Jutan](https://twitter.com/jutanium)
+- [Danny Thompson](https://twitter.com/DThompsonDev)
+- [Nikita Koselev](https://twitter.com/NikitaKoselev)
 - [tylerleonhardt](https://twitter.com/TylerLeonhardt)
+- [John Papa](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
 - [octokatherine](https://readme.so)
-- [codewithluke](https://twitter.com/codewithluke)
 -
-- working on this list...please be patient, you know I appreciate you!
+-
+- working on this list..., you know I appreciate you!
 
 ## License
 

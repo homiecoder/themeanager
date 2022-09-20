@@ -5,16 +5,12 @@
 - [x] add state to currentTheme/font
   - [x] be sure to set state fallback to ""
   - [x] how do i use global state?
-  - [] is an event listener enough?
-- [x] (data storage) choices: https://code.visualstudio.com/api/extension-capabilities/common-capabilities
-- [] allow to post link to get the theme and font if publically available.
+- [] is an event listener enough?
+- [] allow to post link to get the theme and font if publically available maybe in notification popup. But it would be sick to have the link posted in live chat?!!
 - [] https://www.npmjs.com/package/vsls
-- []
-- [] get key commands working
-- [] let your chat change the theme for a streamers set value (bits or sub level etc.)
+- [x] get key commands working
 - [] gotta fix the settings so you can manage them tried from the alert popup and he said nope not working. come back to this.
 - [x] what is the command palette? I need that.
-- []
 - [] randomize the theme and font.
 - [] set theme based on time of day.
 - [] what about vscode-test package?
