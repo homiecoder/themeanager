@@ -1,7 +1,7 @@
 {
   "name": "vscode-themeanager",
   "displayName": "Themeanager",
-  "description": "This is you new assistant to the theme manager. Display your theme in a notification or in the status bar.",
+  "description": "Themeanager, assistant to the theme manager. Display your theme and font in the status bar.",
   "version": "1.0.0",
   "publisher": "homiecoder",
   "license": "MIT",
