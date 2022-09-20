@@ -48,13 +48,3 @@ export function checkIfThemeanagerSettingsChanged(
     e.affectsConfiguration(setting)
   );
 }
-
-function getAllUserSettings() {
-  const showCurrentThemeAndFontAtStartup =
-    getShowCurrentThemeAndFontAtStartup();
-  const showStatusBar = getShowStatusBar();
-  return {
-    showCurrentThemeAndFontAtStartup,
-    showStatusBar,
-  };
-}

@@ -27,4 +27,3 @@ export enum StandardSettings {
 export type AllSettings = StandardSettings | IntervalSettings;
 
 export enum Sections {}
-// themeanagerSection = "themeanager",

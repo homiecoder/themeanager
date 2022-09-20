@@ -3,7 +3,8 @@ import { getShowStatusBar } from "./configuration";
 import { Commands, currentTheme, sbarThemeText } from "./models";
 
 const _statusBarItem: StatusBarItem = window.createStatusBarItem(
-  StatusBarAlignment.Left
+  StatusBarAlignment.Right,
+  9800
 );
 
 export const getStatusBarItem = () => {

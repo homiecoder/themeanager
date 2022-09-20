@@ -5,6 +5,8 @@ import {
   sbarThemeText,
   themeOnlyNotification,
 } from "./models";
+import { updateStatusBar } from "./statusbar";
+// import { updateStatusBar } from "./statusbar";
 
 // Show the current theme in notification popup.
 export async function showCurrentThemeHandler() {
@@ -21,11 +23,9 @@ export async function showCurrentThemeAndFontFamilyHandler() {
   await window.showInformationMessage(themeAndFontNotification);
 }
 
-export function showStatusBarHandler() {
-  const statusBarButton = window.createStatusBarItem(
-    StatusBarAlignment.Left,
-    100
-  );
-  statusBarButton.text = `${sbarThemeText} `;
-  statusBarButton.show();
+// export function showStatusBarHandler() {
+//   updateStatusBar();
+// }
+export async function showStatusBarHandler() {
+  updateStatusBar();
 }
