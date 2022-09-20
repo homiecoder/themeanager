@@ -25,21 +25,3 @@ export async function updateShowCurrentThemeAndFontAtStartup(value: boolean) {
 export async function updateShowStatusBar(value: boolean) {
   return await updateGlobalConfiguration(StandardSettings.ShowStatusBar, value);
 }
-
-export async function updateShowWindowTitle(value: boolean) {
-  return await updateGlobalConfiguration(
-    StandardSettings.ShowWindowTitle,
-    value
-  );
-}
-
-export function checkIfThemeanagerSettingsChanged(e: ConfigurationChangeEvent) {
-  return (
-    e.affectsConfiguration(
-      `${extensionShortName}.${StandardSettings.ShowStatusBar}`
-    ) ||
-    e.affectsConfiguration(
-      `${extensionShortName}.${StandardSettings.ShowCurrentThemeAndFontAtStartup}`
-    )
-  );
-}
