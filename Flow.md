@@ -9,6 +9,10 @@
 - [x] https://www.npmjs.com/package/vsls
 - [x] get key commands working
 - [x] gotta fix the settings so you can manage them tried from the alert popup and he said nope not working. come back to this.
+- [] what about vscode-test package?
+- []
+- []
+- []
 - []
 - []
 - []
@@ -25,6 +29,7 @@
 - []
 
 ##### favoriteThemes:
+
 - [] Should the user be able to pick the theme and font from a list?
 
 ###### setFavoriteThemes:
