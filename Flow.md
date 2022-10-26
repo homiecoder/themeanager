@@ -5,27 +5,27 @@
 - [x] add state to currentTheme/font
   - [x] be sure to set state fallback to ""
   - [x] how do i use global state?
-- [] is an event listener enough?
-- [] allow to post link to get the theme and font if publically available maybe in notification popup. But it would be sick to have the link posted in live chat?!!
-- [] https://www.npmjs.com/package/vsls
+- [x] is an event listener enough?
+- [x] https://www.npmjs.com/package/vsls
 - [x] get key commands working
-- [] gotta fix the settings so you can manage them tried from the alert popup and he said nope not working. come back to this.
-- [x] what is the command palette? I need that.
-- [] randomize the theme and font.
-- [] set theme based on time of day.
-- [] what about vscode-test package?
-- [] what about tslint package?
+- [x] gotta fix the settings so you can manage them tried from the alert popup and he said nope not working. come back to this.
 - []
 - []
 - []
 
 #### TODO:
 
-- []
+- [] randomize the theme and font.
+- [] set theme based on time of day.
+- [] what about vscode-test package?
+- [] what about tslint package?
+- [] Need to update the settings in the command pallete to be easy to use/select
+- [] allow to post link to get the theme and font if publically available maybe in notification popup. But it would be sick to have the link posted in live chat?
 - []
 - []
 
 ##### favoriteThemes:
+- [] Should the user be able to pick the theme and font from a list?
 
 ###### setFavoriteThemes:
 

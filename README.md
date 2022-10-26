@@ -179,6 +179,7 @@ If you have any feedback, please reach out to me @:
 
 - [Kevin Powell](https://twitter.com/KevinJPowell)
 - [Jenn Junod](https://twitter.com/JennJunod)
+- [Jay Miller](https://twitter.com/kjaymiller)
 - [BenDMyers](https://twitter.com/BenDMyers)
 - [Rizel](https://twitter.com/blackgirlbytes)
 - [James Q Quick](https://twitter.com/jamesqquick)
@@ -186,7 +187,6 @@ If you have any feedback, please reach out to me @:
 - [Luke](https://twitter.com/codewithluke)
 - [Theo](https://twitter.com/t3dotgg)
 - [WebDevJunkie](https://github.com/codyseibert)
-- [Jay Miller](https://twitter.com/kjaymiller)
 - [Dan Jutan](https://twitter.com/jutanium)
 - [Danny Thompson](https://twitter.com/DThompsonDev)
 - [Nikita Koselev](https://twitter.com/NikitaKoselev)
