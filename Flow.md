@@ -62,3 +62,27 @@
 - []
 - []
 - []
+
+
+- [ ] Whats the best way to get rid of the old build and see the active changes I am making?
+    - [ ] right now in my vscode that i'm working in, has the old package.
+- [ ]
+- [ ] I would like to rebase, do you?
+- [ ] I am trying to add an option to change the size of the status bar text: ()
+    - [ ] full
+    - [ ] short
+    - [ ] rotate
+    - As opposed to read-configuration line: 40
+    - 1st challenge is update-config.ts line
+- [ ] How do I get a logger/console.log to see what info is being passed, etc.
+        - [ ] When trying to update/change the vscode window.title I am unable to remove the title without destroying the "original" title.
+    - I am unable to "inject" the following back into the package.json as "window.title" (line483 my settings.json):
+        - "window.title": "${activeEditorShort} ${separator} ${rootName}"
+- [ ] Can/should i async/await these helpers.
+    - sometimes the variables are undefined, how/can/should i fix this?
+
+
+
+jay's extension:
+- if there is a new project created/ or prompt if there is no code of conduct prompt would you like to create one prompt?
+- 
