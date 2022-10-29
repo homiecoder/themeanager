@@ -35,7 +35,7 @@ export function getShowStatusBar() {
 export function getShowThemeAndFontNotificationAtInterval() {
   return readConfiguration<boolean>(
     StandardSettings.ShowThemeAndFontNotificationAtInterval,
-    true
+    false
   );
 }
 

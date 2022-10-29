@@ -124,7 +124,7 @@
         },
         "themeanager.showThemeAndFontNotificationAtInterval": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "Specifies that themeanager should show current theme and font notification at set interval"
         }
       }
