@@ -32,6 +32,13 @@ export function getShowStatusBar() {
   return readConfiguration<boolean>(StandardSettings.ShowStatusBar, true);
 }
 
+export function getShowThemeAndFontNotificationAtInterval() {
+  return readConfiguration<boolean>(
+    StandardSettings.ShowThemeAndFontNotificationAtInterval,
+    true
+  );
+}
+
 export function getAllSettingNames() {
   const settings = [];
   const standardSettings = Object.values(StandardSettings).map(

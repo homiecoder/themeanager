@@ -25,3 +25,12 @@ export async function updateShowCurrentThemeAndFontAtStartup(value: boolean) {
 export async function updateShowStatusBar(value: boolean) {
   return await updateGlobalConfiguration(StandardSettings.ShowStatusBar, value);
 }
+
+export async function updateShowThemeAndFontNotificationAtIntervall(
+  value: boolean
+) {
+  return await updateGlobalConfiguration(
+    StandardSettings.ShowThemeAndFontNotificationAtInterval,
+    value
+  );
+}

@@ -59,9 +59,20 @@
         "title": "Display Current Theme & Font Family",
         "category": "Themeanager",
         "description": "Shows your current theme & font in vscode notification popup."
+      },
+      {
+        "command": "themeanager.showThemeAndFontNotificationAtInterval",
+        "title": "Display Notification Popup every (default: 2mins.).",
+        "category": "Themeanager",
+        "description": "Shows your current theme and/or font in vscode notification popup at set interval."
       }
     ],
     "keybindings": [
+      {
+        "command": "themeanager.showThemeAndFontNotificationAtInterval",
+        "key": "ctrl+shift+alt+6",
+        "mac": "cmd+shift+alt+6"
+      },
       {
         "command": "themeanager.showCurrentTheme",
         "key": "ctrl+shift+alt+7",
@@ -91,6 +102,10 @@
         {
           "command": "themeanager.showCurrentThemeAndFontFamily",
           "when": "editorIsOpen"
+        },
+        {
+          "command": "themeanager.showThemeAndFontNotificationAtInterval",
+          "when": "editorIsOpen"
         }
       ]
     },
@@ -106,6 +121,11 @@
           "type": "boolean",
           "default": true,
           "description": "Displays the current theme in the status bar"
+        },
+        "themeanager.showThemeAndFontNotificationAtInterval": {
+          "type": "boolean",
+          "default": true,
+          "description": "Specifies that themeanager should show current theme and font notification at set interval"
         }
       }
     }

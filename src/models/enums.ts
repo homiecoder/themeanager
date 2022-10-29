@@ -22,6 +22,7 @@ export enum IntervalSettings {
 export enum StandardSettings {
   ShowStatusBar = "showStatusBar",
   ShowCurrentThemeAndFontAtStartup = "showCurrentThemeAndFontAtStartup",
+  ShowThemeAndFontNotificationAtInterval = "showThemeAndFontNotificationAtInterval",
 }
 
 export type AllSettings = StandardSettings | IntervalSettings;

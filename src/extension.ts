@@ -11,10 +11,12 @@ import {
   showCurrentThemeAndFontFamilyHandler,
   showCurrentThemeHandler,
   showStatusBarHandler,
+  showThemeAndFontNotificationAtIntervalHandler,
 } from "./commands";
 import {
   getShowCurrentThemeAndFontAtStartup,
   getShowStatusBar,
+  getShowThemeAndFontNotificationAtInterval,
 } from "./configuration";
 
 import { Commands } from "./models";
@@ -27,6 +29,7 @@ export async function activate(context: ExtensionContext) {
 
   await checkShowCurrentThemeAndFontAtStartupLogic();
   await checkShowStatusBarLogic();
+  await checkShowThemeAndFontNoticationAtIntervalLogic();
 
   workspace.onDidChangeConfiguration((configurationChangeEvent) => {
     if (configurationChangeEvent.affectsConfiguration("themeanager")) {
@@ -56,7 +59,11 @@ function registerCommands() {
       Commands.showCurrentThemeAndFontFamily,
       showCurrentThemeAndFontFamilyHandler
     ),
-    commands.registerCommand(Commands.showStatusBar, showStatusBarHandler);
+    commands.registerCommand(Commands.showStatusBar, showStatusBarHandler),
+    commands.registerCommand(
+      Commands.showThemeAndFontNotificationAtInterval,
+      showThemeAndFontNotificationAtIntervalHandler
+    );
 }
 
 export async function checkShowCurrentThemeAndFontAtStartupLogic() {
@@ -74,3 +81,13 @@ export async function checkShowStatusBarLogic() {
     return;
   }
 }
+
+export async function checkShowThemeAndFontNoticationAtIntervalLogic() {
+  if (getShowThemeAndFontNotificationAtInterval()) {
+    showThemeAndFontNotificationAtIntervalHandler();
+  } else {
+    return;
+  }
+}
+
+export function deactivate() {}
