@@ -15,7 +15,7 @@
     "url": "https://twitter.com/homiecoder"
   },
   "homepage": "https://github.com/tnfdesigns/themeanager",
-  "icon": "assets/icon.png",
+  "icon": "assets/icon.webp",
   "engines": {
     "vscode": "^1.71.0"
   },
