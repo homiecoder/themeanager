@@ -34,7 +34,7 @@ export const fontOnlyNotification = `Current Font: ${currentFontFamily}`;
 export const themeAndFontNotification = `Current Theme: ${currentTheme}\u00A0\u00A0 | \u00A0\u00A0Font: ${currentFontFamily}`;
 
 // Set and show alert interval.
-export const alertInterval = 120000;
+export const alertInterval = 300000;
 export const showAlertInterval = alertInterval / 1000 / 60;
 
 export const themeAndFontIntervalMessage = `${themeAndFontNotification}  (${showAlertInterval}mins)`;

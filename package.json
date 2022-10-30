@@ -12,7 +12,8 @@
   "author": {
     "name": "BJ-HomieCoder",
     "email": "themeanagerextension@gmail.com",
-    "url": "https://twitter.com/homiecoder"
+    "url": "https://twitter.com/homiecoder",
+    "sponsor": ""
   },
   "homepage": "https://github.com/tnfdesigns/themeanager",
   "icon": "assets/icon.webp",
@@ -62,7 +63,7 @@
       },
       {
         "command": "themeanager.showThemeAndFontNotificationAtInterval",
-        "title": "Display Notification Popup every (default: 2mins.).",
+        "title": "Display Notification Popup every (default: 5mins.).",
         "category": "Themeanager",
         "description": "Shows your current theme and/or font in vscode notification popup at set interval."
       }
@@ -114,7 +115,7 @@
       "properties": {
         "themeanager.showCurrentThemeAndFontAtStartup": {
           "type": "boolean",
-          "default": false,
+          "default": true,
           "description": "Specifies that themeanager should show current theme and font at startup"
         },
         "themeanager.showStatusBar": {
